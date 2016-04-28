@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <com.leqienglish.view.scroll.LeQiScrollView
+            android:id="@+id/learne_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/learne_title"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+      
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/learne_contet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+      
+    </LinearLayout>
+  </com.leqienglish.view.scroll.LeQiScrollView>
+    <com.leqienglish.view.play.PlayBarView
+        android:id="@+id/learne_playBarView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </com.leqienglish.view.play.PlayBarView>
+
+    <com.leqienglish.view.play.FollowReadView
+        android:id="@+id/learne_followReadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    </com.leqienglish.view.play.FollowReadView>
+
+</RelativeLayout>

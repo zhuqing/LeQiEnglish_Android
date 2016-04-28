@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <TableLayout android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+        >
+      <TableRow >
+          <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/username"/>
+          <EditText android:id="@+id/username"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/loginname"
+              android:selectAllOnFocus="true"
+              android:background="@drawable/editbg"/>"
+      </TableRow>
+      <TableRow >
+          <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/password"/>
+          <EditText android:id="@+id/password"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/passwordinfo"
+              android:selectAllOnFocus="true"
+              android:background="@drawable/editbg"/>
+      </TableRow>
+      <TableRow >
+          <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/repassword"/>
+          <EditText android:id="@+id/repassword"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/repasswordinfo"
+              android:selectAllOnFocus="true"
+              android:background="@drawable/editbg"/>
+      </TableRow>
+      <TableRow >
+          <TextView android:id="@+id/sex"
+              android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="性别："/>
+          <RadioGroup android:id="@+id/rg"
+              android:orientation="horizontal"
+              android:layout_gravity="center_horizontal">
+              <RadioButton android:id="@+id/male"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:checked="true"
+                  android:text="男"/>
+              <RadioButton android:id="@+id/female"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="女"
+                />
+          </RadioGroup>
+      </TableRow>
+      <TableRow >
+          <Button android:id="@+id/cancel"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/cancel"
+              />
+          <Button android:id="@+id/submit"
+               android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/submit"
+              />
+      </TableRow>
+  </TableLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page_item_backgroud_border"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/first_page_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/first_page_title_text"
+            style="@style/first_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/first_page_description_textview"
+            style="@style/first_page_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/first_page_open_info_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+              android:includeFontPadding="false"
+              android:layout_marginTop="4dp"
+            android:paddingLeft="2dp"
+             android:paddingRight="2dp"
+             android:paddingTop="4dp"
+              android:paddingBottom="4dp"
+           android:textSize="14dp"
+
+
+            android:background="@drawable/button_background"
+            android:text="@string/scanAllContent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/first_page_catalog_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/first_page_catalog_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/first_page_catalog_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.leqienglish.view.bottombar.BottomBar
+        android:id="@+id/fist_page_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.leqienglish.view.bottombar.BottomBar>
+
+</LinearLayout>

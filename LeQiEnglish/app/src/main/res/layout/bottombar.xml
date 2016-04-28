@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/bottombar_hotdegree_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:layout_weight="4"
+        android:background="@drawable/bottombar_button"
+        android:padding="0dp" >
+
+        <TextView
+            android:id="@+id/bottombar_hotdegree_textview"
+            style="@style/bottombar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="热度123" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar_share_button"
+        style="@style/bottombar_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dip"
+        android:layout_weight="5"
+        android:background="@drawable/bottombar_button"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/bottombar_share_image"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar_comment_button"
+        style="@style/bottombar_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dip"
+        android:layout_weight="5"
+        android:background="@drawable/bottombar_button"
+        android:padding="0dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/comment_background" />
+
+        <TextView
+            android:id="@+id/bottombar_comment_number"
+            style="@style/bottombar_comment_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2341"
+            android:translationY="-2dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar_great_button"
+        style="@style/bottombar_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dip"
+        android:layout_weight="5"
+        android:background="@drawable/bottombar_button"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/bottombar_great_image"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/great_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar_subscription_button"
+        style="@style/bottombar_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dip"
+        android:layout_weight="5"
+        android:background="@drawable/bottombar_button"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/bottombar_subscription_image"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/heart_small" />
+    </RelativeLayout>
+
+</LinearLayout>

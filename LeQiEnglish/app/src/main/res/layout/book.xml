@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/content_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/page_item_backgroud_border"
+            android:orientation="vertical"
+          >
+
+            <LinearLayout
+                android:id="@+id/content_linear"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/book_title"
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="20dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="update:" />
+
+                    <TextView
+                        android:id="@+id/book_updateTime"
+                        style="@style/createData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-03-29" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/book_header_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="课程简介：" />
+
+                <TextView
+                    android:id="@+id/book_descirption"
+                    style="@style/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+         
+                    android:text="课程列表：" />
+
+                <ListView
+                    android:id="@+id/book_lessonlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:divider="#d7d7d7"
+                    android:dividerHeight="1px"
+                    android:paddingLeft="10dp" >
+                </ListView>
+            </LinearLayout>
+
+            <com.leqienglish.view.bottombar.BottomBar
+                android:id="@+id/book_bottombar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bottombar_backgroud_border"
+                android:padding="0dp" >
+            </com.leqienglish.view.bottombar.BottomBar>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

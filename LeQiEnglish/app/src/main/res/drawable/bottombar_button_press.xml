@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <selector>
+            <item
+                android:drawable="@color/button_press_color">
+              
+            </item>
+           
+        </selector>
+        
+    </item>
+    <item>
+        <shape>
+            <stroke
+                android:width="0.1dp"
+                android:color="@color/button_line" />
+
+            <padding
+                android:bottom="0dp"
+                android:left="0dp"
+                android:right="1dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+
+</layer-list>
